@@ -1,0 +1,38 @@
+// Problem Statement :-
+// You have been appointed as senior developer in Tata’s R&D department. The engineers there are lazy,
+// they don’t want to do everything from scratch whenever they create a new model.
+// They expect you to help them create an inheritance model for the automobiles.
+
+// Description :-
+// Implement an inheritance model for four wheeler automobiles.
+// Implement using both object.create() and constructor functions().
+// Think of properties of what can be inherited.
+
+
+
+//Implementation by using Object.create()
+let four_wheeler = {
+  brand: "Maruti Suzuki",
+  wheels: "four",
+  steering: "Yes",
+  Tank: "30 Litres",
+  Engine: "1000 hp",
+};
+
+let Maruti_Max = Object.create(four_wheeler);
+
+// note:this object is not visible on replit but is visible on vs code
+console.log(Maruti_Max);
+
+//Implementation by using Constructor function ()
+function Car(){
+    this.brand="Maruti Suzuki",
+    this.wheels="four",
+    this.steering="Yes",
+    this.Tank="30 Litres",
+    this.Engine="1000 hp"
+}
+
+let new_model= new Car();
+
+console.log(new_model)
